@@ -1,9 +1,9 @@
 ---
-name: dita-reply
+name: oasis-dita
 description: 按 OASIS DITA 风格回复或写入文档
 ---
 
-# DITA Reply
+# Oasis Dita
 
 以 OASIS DITA（OASIS 维护的主题化写作标准）的方式回复或写入文档。要点见 `references/oasis-dita.md`，官方原文在 `references/oasis-dita/`。
 

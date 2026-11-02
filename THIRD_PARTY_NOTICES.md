@@ -63,7 +63,7 @@
 | wizard | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/wizard) | MIT | 仅附加 agents/openai.yaml |
 | writing-for-agents | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/writing-for-agents) | MIT | 仅附加 agents/openai.yaml |
 
-`skills/workflow/dita-reply/references/oasis-dita/` 摘录自 OASIS DITA 1.3 规范，版权归 OASIS Open 所有，文件内保留原版权声明。
+`skills/workflow/oasis-dita/references/oasis-dita/` 摘录自 OASIS DITA 1.3 规范，版权归 OASIS Open 所有，文件内保留原版权声明。
 
 ## 未收录
 

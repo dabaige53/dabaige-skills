@@ -26,9 +26,9 @@ ln -s "$PWD/dabaige-skills/skills/workflow/project-maintenance" ~/.claude/skills
 | [1password-project-secrets](skills/tools/1password-project-secrets) | 配置、迁移项目凭据或排查认证失败时使用。 |
 | [codex-handoff](skills/workflow/codex-handoff) | 交接当前工作到新 Codex 任务。 |
 | [codex-thread-doctor](skills/workflow/codex-thread-doctor) | Audit and repair Codex task history and sidebar anomalies, individually or in … |
-| [dita-reply](skills/workflow/dita-reply) | 按 OASIS DITA 风格回复或写入文档 |
 | [hermes-project-handoff](skills/workflow/hermes-project-handoff) | 将项目或任务交接给 Hermes，整理可访问的材料、工作进度、关键决策与验收条件，完成已授权的前置准备并生成独立可用的接力提示词。 |
 | [linear-task-submission](skills/workflow/linear-task-submission) | Manage Linear issues and projects. |
+| [oasis-dita](skills/workflow/oasis-dita) | 按 OASIS DITA 风格回复或写入文档 |
 | [project-maintenance](skills/workflow/project-maintenance) | 盘点、构建和整理项目规范，统一文档职责、存放位置与 AGENTS.md 阅读入口。 |
 | [skills-check](skills/workflow/skills-check) | 检查并清理 Skill 文件中的低价值内容与跨 Skill 依赖：没人要的证明、叠加否认、重复检查、空洞收尾、无条件告诫、重复规则，以及引用其他 Skill… |
 | [think-hard](skills/workflow/think-hard) | Use $think-hard for independent reasoning and alternative solutions. |
