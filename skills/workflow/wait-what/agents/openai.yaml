@@ -1,0 +1,6 @@
+interface:
+  display_name: "Wait What"
+  short_description: "补充上下文并重新解释上一条回复"
+  default_prompt: "使用 $wait-what，补充上下文并重新解释上一条回复。"
+policy:
+  allow_implicit_invocation: false

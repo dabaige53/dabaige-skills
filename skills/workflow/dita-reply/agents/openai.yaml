@@ -1,0 +1,6 @@
+interface:
+  display_name: "dita-reply"
+  short_description: "按 OASIS DITA 风格回复或写入文档"
+  default_prompt: "使用 $dita-reply 按项目 AUDIENCE.md 确定读者，再按 OASIS DITA 主题类型组织回复。"
+policy:
+  allow_implicit_invocation: true

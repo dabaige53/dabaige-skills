@@ -1,0 +1,6 @@
+interface:
+  display_name: "User Doctor"
+  short_description: "依据用户交互记录分析协作问题"
+  default_prompt: "使用 $user-doctor，依据用户交互记录分析协作问题。"
+policy:
+  allow_implicit_invocation: false

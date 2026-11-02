@@ -1,0 +1,6 @@
+interface:
+  display_name: "Retro"
+  short_description: "复盘开发会话，改进 Agent 工作环境"
+  default_prompt: "使用 $retro，复盘开发会话，改进 Agent 工作环境。"
+policy:
+  allow_implicit_invocation: false

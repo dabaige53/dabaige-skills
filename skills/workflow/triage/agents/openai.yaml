@@ -1,0 +1,6 @@
+interface:
+  display_name: "Triage"
+  short_description: "分类和核验问题及外部拉取请求"
+  default_prompt: "使用 $triage，分类和核验问题及外部拉取请求。"
+policy:
+  allow_implicit_invocation: false

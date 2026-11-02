@@ -1,0 +1,5 @@
+interface:
+  display_name: "readable-text"
+  short_description: "撰写与优化易读文本，统一批量标题、通知和摘要的结构、重点与用词"
+policy:
+  allow_implicit_invocation: false

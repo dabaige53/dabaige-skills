@@ -1,0 +1,6 @@
+policy:
+  allow_implicit_invocation: false
+interface:
+  display_name: "Writing Shape"
+  short_description: "把素材与内容顺序组织成完整文章"
+  default_prompt: "使用 $writing-shape，把素材与内容顺序组织成完整文章。"

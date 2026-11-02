@@ -1,0 +1,6 @@
+interface:
+  display_name: "Grilling"
+  short_description: "通过深入追问检验计划、决策和想法"
+  default_prompt: "使用 $grilling，通过深入追问检验计划、决策和想法。"
+policy:
+  allow_implicit_invocation: true

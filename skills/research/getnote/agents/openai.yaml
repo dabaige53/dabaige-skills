@@ -1,0 +1,6 @@
+interface:
+  display_name: "Getnote"
+  short_description: "管理得到笔记，整理和查找笔记内容"
+  default_prompt: "使用 $getnote，管理得到笔记，整理和查找笔记内容。"
+policy:
+  allow_implicit_invocation: false

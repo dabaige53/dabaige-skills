@@ -1,0 +1,6 @@
+interface:
+  display_name: "fixit"
+  short_description: "排查系统配置问题，结合网页搜索、GitHub Issues 与 Context7 核实原因和修复方案"
+  default_prompt: "使用 $fixit 排查当前配置问题，先读取本机证据，再结合 Search、GitHub Issues 和 Context7 查找适用方案，区分已确认原因与待验证假设。"
+policy:
+  allow_implicit_invocation: false

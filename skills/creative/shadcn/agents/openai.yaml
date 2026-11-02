@@ -1,0 +1,8 @@
+policy:
+  allow_implicit_invocation: false
+interface:
+  display_name: "Shadcn"
+  short_description: "安装和维护 shadcn/ui 组件"
+  default_prompt: "使用 $shadcn，安装和维护 shadcn/ui 组件。"
+  icon_small: "./assets/shadcn.png"
+  icon_large: "./assets/shadcn.png"

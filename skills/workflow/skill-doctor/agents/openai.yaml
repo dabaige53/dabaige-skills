@@ -1,0 +1,8 @@
+policy:
+  allow_implicit_invocation: false
+interface:
+  display_name: "Skill Doctor"
+  short_description: "根据真实对话评估技能效果并提出改进"
+  default_prompt: "使用 $skill-doctor，根据真实对话评估技能效果并提出改进。"
+  icon_small: "./assets/warp-pixel-icon.svg"
+  icon_large: "./assets/warp-pixel-icon.svg"

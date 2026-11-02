@@ -1,0 +1,7 @@
+interface:
+  display_name: "Hatch Pet"
+  short_description: "创建、修复和验证 Codex 动态宠物"
+  default_prompt: "使用 $hatch-pet，创建、修复和验证 Codex 动态宠物。"
+
+policy:
+  allow_implicit_invocation: false

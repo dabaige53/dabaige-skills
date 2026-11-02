@@ -1,0 +1,7 @@
+interface:
+  display_name: "Codebase Design"
+  short_description: "设计模块接口，分析模块边界与可测试性"
+  default_prompt: "使用 $codebase-design，设计模块接口，分析模块边界与可测试性。"
+
+policy:
+  allow_implicit_invocation: false

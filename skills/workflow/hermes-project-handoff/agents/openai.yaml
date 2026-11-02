@@ -1,0 +1,6 @@
+interface:
+  display_name: "Hermes Handoff"
+  short_description: "整理材料与进度并向 Hermes 交接任务"
+  default_prompt: "使用 $hermes-project-handoff，整理材料与进度并向 Hermes 交接任务。"
+policy:
+  allow_implicit_invocation: false

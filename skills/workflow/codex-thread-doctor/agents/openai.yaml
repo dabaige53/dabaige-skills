@@ -1,0 +1,6 @@
+interface:
+  display_name: "Codex Thread Doctor"
+  short_description: "诊断 Codex 任务历史和侧栏异常"
+  default_prompt: "使用 $codex-thread-doctor，诊断 Codex 任务历史和侧栏异常。"
+policy:
+  allow_implicit_invocation: false

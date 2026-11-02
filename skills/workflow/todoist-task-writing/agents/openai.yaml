@@ -1,0 +1,7 @@
+interface:
+  display_name: "Todoist Task Writing"
+  short_description: "将个人待处理事项创建或更新到 Todoist，统一任务去向和写法。"
+  default_prompt: "使用 $todoist-task-writing，将个人待处理事项创建或更新到 Todoist。"
+
+policy:
+  allow_implicit_invocation: false

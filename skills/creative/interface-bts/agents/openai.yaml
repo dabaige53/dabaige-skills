@@ -1,0 +1,7 @@
+interface:
+  display_name: "interface-bts"
+  short_description: "将界面交互整理为规格海报"
+  default_prompt: "使用 $interface-bts 分析这个界面交互并制作规格海报。"
+
+policy:
+  allow_implicit_invocation: false

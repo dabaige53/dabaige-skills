@@ -1,0 +1,6 @@
+interface:
+  display_name: "How"
+  short_description: "解释现有项目的模块职责、运行过程和数据流，并给出代码位置"
+  default_prompt: "使用 $how，解释这个功能如何运行、由哪些模块负责以及数据流向。"
+policy:
+  allow_implicit_invocation: false

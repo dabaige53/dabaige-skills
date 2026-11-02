@@ -1,0 +1,6 @@
+interface:
+  display_name: "CLI Creator"
+  short_description: "从 API 或现有工具创建可组合的 CLI"
+  default_prompt: "使用 $cli-creator，从 API 或现有工具创建可组合的 CLI。"
+policy:
+  allow_implicit_invocation: false

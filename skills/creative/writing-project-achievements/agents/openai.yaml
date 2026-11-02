@@ -1,0 +1,6 @@
+interface:
+  display_name: "Work Report"
+  short_description: "面向领导撰写年度述职与项目成果，逐项展开交付内容和业务价值"
+  default_prompt: "使用 $writing-project-achievements，根据项目材料撰写成果汇报，先总结后展开，写清具体交付、业务内容与用途。"
+policy:
+  allow_implicit_invocation: false

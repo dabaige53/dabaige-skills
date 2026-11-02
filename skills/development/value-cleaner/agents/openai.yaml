@@ -1,0 +1,12 @@
+interface:
+  display_name: "Value Cleaner"
+  short_description: "按 code、test、rule、docs 清理低价值内容"
+  icon_small: "assets/icon.svg"
+  icon_large: "assets/icon.svg"
+  default_prompt: "使用 $value-cleaner code <路径>，清理其中的低价值内容。也可换成 test、rule 或 docs。"
+policy:
+  allow_implicit_invocation: false
+  products:
+    - "chatgpt"
+    - "codex"
+    - "atlas"

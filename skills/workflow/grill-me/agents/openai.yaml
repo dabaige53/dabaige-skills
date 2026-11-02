@@ -1,0 +1,6 @@
+interface:
+  display_name: "Grill Me"
+  short_description: "通过连续追问检验方案与需求"
+  default_prompt: "使用 $grill-me，通过连续追问检验方案与需求。"
+policy:
+  allow_implicit_invocation: false

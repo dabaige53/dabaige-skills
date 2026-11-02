@@ -1,0 +1,6 @@
+policy:
+  allow_implicit_invocation: false
+interface:
+  display_name: "Antigravity CLI"
+  short_description: "操作和排查 Antigravity CLI 的配置与会话"
+  default_prompt: "使用 $antigravity-cli，操作和排查 Antigravity CLI 的配置与会话。"

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Benchmark Checklist"
+  short_description: "检查性能数据的错误率、真实工作量、重复性和端到端收益是否可信"
+  default_prompt: "使用 $benchmark-checklist，检查这次性能对比的测量方法和结论是否可信。"
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Wayfinder"
+  short_description: "协调研究并将发现整理为后续行动"
+  default_prompt: "使用 $wayfinder，协调研究并将发现整理为后续行动。"
+policy:
+  allow_implicit_invocation: false

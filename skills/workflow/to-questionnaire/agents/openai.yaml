@@ -1,0 +1,6 @@
+interface:
+  display_name: "To Questionnaire"
+  short_description: "把待澄清问题整理成可回答的问卷"
+  default_prompt: "使用 $to-questionnaire，把待澄清问题整理成可回答的问卷。"
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Diagnosing Bugs"
+  short_description: "用证据定位故障、测试失败和性能问题"
+  default_prompt: "使用 $diagnosing-bugs，用证据定位故障、测试失败和性能问题。"
+policy:
+  allow_implicit_invocation: false

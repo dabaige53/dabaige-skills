@@ -1,0 +1,7 @@
+interface:
+  display_name: "Research"
+  short_description: "研究一手资料并保存带引用的发现"
+  default_prompt: "使用 $research，研究一手资料并保存带引用的发现。"
+
+policy:
+  allow_implicit_invocation: false

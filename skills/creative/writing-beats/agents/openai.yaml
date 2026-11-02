@@ -1,0 +1,6 @@
+policy:
+  allow_implicit_invocation: false
+interface:
+  display_name: "Writing Beats"
+  short_description: "把写作素材编排为连贯的内容顺序"
+  default_prompt: "使用 $writing-beats，把写作素材编排为连贯的内容顺序。"

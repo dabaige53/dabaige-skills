@@ -1,0 +1,6 @@
+interface:
+  display_name: "UI Skills Root"
+  short_description: "按任务选择合适的 UI 技能"
+  default_prompt: "使用 $ui-skills-root，根据界面任务选择最合适的 UI 技能并完成工作。"
+policy:
+  allow_implicit_invocation: false

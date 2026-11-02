@@ -1,0 +1,6 @@
+interface:
+  display_name: "skills-check"
+  short_description: "清理 Skill 中的低价值内容与跨 Skill 依赖"
+  default_prompt: "使用 $skills-check <Skill 目录>，清理其中的低价值内容和对其他 Skill 的依赖。"
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,6 @@
+policy:
+  allow_implicit_invocation: false
+interface:
+  display_name: "Wizard"
+  short_description: "生成人工操作所需的交互式命令行向导"
+  default_prompt: "使用 $wizard，生成人工操作所需的交互式命令行向导。"

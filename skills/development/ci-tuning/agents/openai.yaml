@@ -1,0 +1,6 @@
+interface:
+  display_name: "ci-tuning"
+  short_description: "基于现有 GitHub Actions 重组任务、编排并发、加速节点，并验证 CI 提速效果"
+  default_prompt: "使用 $ci-tuning init 为当前项目建立 CI.md 和统一 CI Hook；也可换成 organize、parallel、accelerate <范围> 或 validate。"
+policy:
+  allow_implicit_invocation: false

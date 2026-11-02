@@ -1,0 +1,6 @@
+interface:
+  display_name: "Frontend Slides"
+  short_description: "创建动画丰富的 HTML 演示文稿"
+  default_prompt: "使用 $frontend-slides 创建或改进 HTML 演示文稿。"
+policy:
+  allow_implicit_invocation: false

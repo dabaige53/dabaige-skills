@@ -1,0 +1,4 @@
+interface:
+  display_name: "Find Docs"
+  short_description: "查找最新的库、API 和命令行工具文档"
+  default_prompt: "使用 $find-docs，查找最新的库、API 和命令行工具文档。"

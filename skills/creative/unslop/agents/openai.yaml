@@ -1,0 +1,6 @@
+interface:
+  display_name: "Unslop"
+  short_description: "清理文章中的套话、空泛修辞和常见 AI 表达，保留原意与语气"
+  default_prompt: "使用 $unslop，清理这段文字中的套话和 AI 写作痕迹。"
+policy:
+  allow_implicit_invocation: false

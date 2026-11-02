@@ -1,0 +1,6 @@
+policy:
+  allow_implicit_invocation: false
+interface:
+  display_name: "Writing Fragments"
+  short_description: "收集和探索尚未成形的写作素材"
+  default_prompt: "使用 $writing-fragments，收集和探索尚未成形的写作素材。"

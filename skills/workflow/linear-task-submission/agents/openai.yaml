@@ -1,0 +1,4 @@
+interface:
+  display_name: "Linear Task Submission"
+  short_description: "管理 Linear 项目与任务"
+  default_prompt: "使用 $linear-task-submission，管理 Linear 项目与任务。"
