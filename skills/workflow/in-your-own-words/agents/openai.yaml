@@ -1,0 +1,6 @@
+interface:
+  display_name: "in-your-own-words"
+  short_description: "用自己的话说明用户的目标和要解决的问题，发现理解偏差后再推进"
+  default_prompt: "使用 $in-your-own-words，复述你理解的目标和问题。"
+policy:
+  allow_implicit_invocation: false

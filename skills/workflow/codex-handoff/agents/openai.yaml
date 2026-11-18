@@ -1,6 +1,0 @@
-interface:
-  display_name: "Codex Handoff"
-  short_description: "整理上下文并交接 Codex 任务"
-  default_prompt: "使用 $codex-handoff，整理上下文并交接 Codex 任务。"
-policy:
-  allow_implicit_invocation: false

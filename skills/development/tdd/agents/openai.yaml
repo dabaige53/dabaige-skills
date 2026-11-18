@@ -1,6 +1,6 @@
 interface:
-  display_name: "TDD"
-  short_description: "通过测试驱动开发实现功能和修复问题"
-  default_prompt: "使用 $tdd，通过测试驱动开发实现功能和修复问题。"
+  display_name: "tdd"
+  short_description: "用最小的失败用例重现缺陷，修复后运行同一用例，不强求昂贵测试"
+  default_prompt: "使用 $tdd，为这个缺陷选择最小的回归测试并修复。"
 policy:
   allow_implicit_invocation: false

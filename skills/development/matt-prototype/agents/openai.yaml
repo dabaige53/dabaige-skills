@@ -1,6 +1,0 @@
-interface:
-  display_name: "matt-prototype"
-  short_description: "构建用于验证逻辑或界面设计的原型"
-  default_prompt: "使用 $matt-prototype，构建用于验证逻辑或界面设计的原型。"
-policy:
-  allow_implicit_invocation: false

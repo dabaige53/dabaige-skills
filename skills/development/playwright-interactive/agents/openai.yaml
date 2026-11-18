@@ -1,8 +1,0 @@
-interface:
-  display_name: "Playwright Interactive"
-  short_description: "通过持久浏览器会话调试网页和 Electron 应用"
-  icon_small: "./assets/playwright-small.svg"
-  icon_large: "./assets/playwright.png"
-  default_prompt: "使用 $playwright-interactive，通过持久浏览器会话调试网页和 Electron 应用。"
-policy:
-  allow_implicit_invocation: false

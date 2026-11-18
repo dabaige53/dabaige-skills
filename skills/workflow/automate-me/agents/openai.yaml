@@ -1,0 +1,6 @@
+interface:
+  display_name: "automate-me"
+  short_description: "根据明确偏好和反复出现的工作习惯，创建或改进个人工作方式 Skill"
+  default_prompt: "使用 $automate-me，把我的工作习惯整理为个人 mode 的草案。"
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,6 @@
+interface:
+  display_name: "cloud-setup"
+  short_description: "配置和优化项目多端运行环境、启动与调度入口、共享资源及产物路径"
+  default_prompt: "使用 $cloud-setup 配置和优化当前项目在本机、远程主机及云端的运行方式，落实共享资源和产物配置，并验证实际效果。"
+policy:
+  allow_implicit_invocation: false

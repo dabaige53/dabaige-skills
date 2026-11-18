@@ -1,6 +1,0 @@
-interface:
-  display_name: "project-development-standards"
-  short_description: "统一项目配置、数据源与运行入口，并用可验证的结果完成性能优化和后续维护"
-  default_prompt: "使用 $project-development-standards 检查当前项目，补齐开发规范、配置和运行入口，修复有证据的性能问题并验证结果。"
-policy:
-  allow_implicit_invocation: false

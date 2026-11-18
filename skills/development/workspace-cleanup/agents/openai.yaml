@@ -1,0 +1,6 @@
+interface:
+  display_name: "workspace-cleanup"
+  short_description: "清理项目临时文件、旧结果和废弃工作目录，保留无法判断的内容"
+  default_prompt: "使用 $workspace-cleanup 清理当前项目不再需要的文件和目录，直接完成已授权且能确定的清理，最后列出无法判断的事项。"
+policy:
+  allow_implicit_invocation: false

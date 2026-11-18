@@ -1,6 +1,0 @@
-interface:
-  display_name: "Ask Matt"
-  short_description: "根据任务选择合适的技能与工作流程"
-  default_prompt: "使用 $ask-matt，根据任务选择合适的技能与工作流程。"
-policy:
-  allow_implicit_invocation: false

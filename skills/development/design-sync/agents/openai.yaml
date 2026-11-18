@@ -1,0 +1,6 @@
+interface:
+  display_name: "Design Sync"
+  short_description: "同步本次改动涉及的代码、设计画板、示例和手册，列出版本与遗漏"
+  default_prompt: "使用 $design-sync 同步本次界面改动涉及的设计资料，并报告未同步项。"
+policy:
+  allow_implicit_invocation: false

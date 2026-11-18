@@ -1,6 +1,6 @@
 interface:
   display_name: "project-maintenance"
-  short_description: "创建或补全项目长期文档，在 AGENTS.md 中为每份文档维护一行阅读入口"
-  default_prompt: "使用 $project-maintenance 生成或补全最小够用的项目长期文档，并将阅读入口维护到 AGENTS.md，每份文档一行；首次改动前先给出简短改动清单并等待确认。"
+  short_description: "整理项目目录和文档，明确文件职责、存放位置，并维护 Agent 阅读入口"
+  default_prompt: "使用 $project-maintenance 整理项目目录和文档，保留有效内容，维护 AGENTS.md 阅读入口；先说明具体改动，按当前授权执行。"
 policy:
   allow_implicit_invocation: false

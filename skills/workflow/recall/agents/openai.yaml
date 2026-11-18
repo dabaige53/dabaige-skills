@@ -1,0 +1,6 @@
+interface:
+  display_name: "recall"
+  short_description: "结合项目内的历史对话与当前工作状态，说明已经做了什么以及下一步"
+  default_prompt: "使用 $recall，回顾这个项目最近的工作和下一步。"
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,6 @@
+interface:
+  display_name: "blast-radius"
+  short_description: "沿着真实依赖分析改动可能影响的地方，说明关键证据和仍未证明的风险"
+  default_prompt: "使用 $blast-radius，分析这次改动会影响哪些地方。"
+policy:
+  allow_implicit_invocation: false

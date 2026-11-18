@@ -1,0 +1,6 @@
+interface:
+  display_name: "technical-writing"
+  short_description: "按读者用途组织技术文档，用直接且一致的表达写清步骤、事实和原因"
+  default_prompt: "使用 $technical-writing，把这份技术说明写得清楚易懂。"
+policy:
+  allow_implicit_invocation: false

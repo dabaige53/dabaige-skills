@@ -1,0 +1,6 @@
+interface:
+  display_name: "no-comments"
+  short_description: "清理重复和无用的代码注释，保留必要约束，并指出注释背后的代码问题"
+  default_prompt: "使用 $no-comments，清理指定文件的无用注释，保留必要约束。"
+policy:
+  allow_implicit_invocation: false

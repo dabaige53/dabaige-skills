@@ -1,6 +1,6 @@
 interface:
-  display_name: "To Tickets"
-  short_description: "将规格拆分为可独立执行的任务"
-  default_prompt: "使用 $to-tickets，将规格拆分为可独立执行的任务。"
+  display_name: "to-tickets"
+  short_description: "将计划、对话或需求拆成可独立验收的任务，明确真实依赖和完成条件"
+  default_prompt: "使用 $to-tickets，将计划、对话或需求拆成可独立验收的任务，明确真实依赖和完成条件。"
 policy:
   allow_implicit_invocation: false

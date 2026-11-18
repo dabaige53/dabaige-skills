@@ -1,0 +1,9 @@
+### Authoring a skill
+
+**You own the skill's voice.** 用在新增或修改 Skill，不因一次使用就重写它。
+
+1. 明确哪种请求会触发、最后交付什么。改上游衍生品时从固定版本的原文件出发，先分清保留、适配和省略。
+2. 用现有 `skill-creator` 与 [writing-for-agents](../../writing-for-agents/SKILL.md) 编写。只留下会改变 Agent 决定的文字；已有方法用引用，共用模板保留原有细节。
+3. 按仓库约定登记来源、调用策略及必要的配套文件。需要分发时使用 Magpie。
+
+**Reply:** 现在解决什么问题、改了什么、如何调用；区分写入与安装。
