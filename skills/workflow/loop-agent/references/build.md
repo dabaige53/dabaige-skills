@@ -13,6 +13,7 @@
 docs/workflow/<流程名>/
 ├── README.md           # 设计摘要、使用方式与运行依赖
 ├── workflow.yaml       # 任务、依赖、条件、执行顺序
+├── <流程名>.workflow.md # 面向人和 Agent 的流程说明
 ├── prompt.md           # AI 自动化任务的轻量入口
 ├── scripts/
 │   ├── preflight.py    # 环境检查
@@ -23,8 +24,10 @@ docs/workflow/<流程名>/
 └── logs/               # 执行与故障记录
 ```
 
-- 默认交付 `README.md`、`workflow.yaml`、`prompt.md` 三个入口文件。若沿用项目原生配置，README 指向真实定义，避免维护第二份工作流事实源；无需 AI 的流程可省略 prompt。
+- 默认交付 `README.md`、`workflow.yaml`、`<流程名>.workflow.md`、`prompt.md` 四类交付文件。若沿用项目原生配置，README 指向真实定义，避免维护第二份工作流事实源；无需 AI 的流程可省略 prompt。
 - `workflow.yaml` 记录触发器、步骤 ID、执行主体、紧前依赖、分支、输入输出、完成条件、失败出口及实际资源路径。采用通用描述时遵循 contract；目标环境无 YAML 支持时复用已有格式（如 JSON），不强制新增依赖。
+- 流程说明固定使用 `<workflow-id>.workflow.md` 命名；例如 ID 为 `daily-sales` 时，文件为 `daily-sales.workflow.md`。新流程的目录名默认与 ID 一致；已有 ID 不适合作文件名时，采用明确映射的安全名称，不擅自修改实际 ID。文件位置可按项目约定配置。
+- 从实际工作流定义生成或更新流程说明，参考 [sample-review.workflow.md](../assets/sample-review.workflow.md)。记录触发、步骤 ID、执行主体、输入输出、紧前/紧后、条件分支、异常出口和完成标准；命令与脚本链接指向真实入口。README 保留摘要和使用方式，链接流程说明；`workflow.yaml` 或平台原生定义仍为唯一执行事实源。修改流程时同步更新说明，实际执行轨迹以运行事件为准。
 - `scripts/` 下的四类脚本为默认职责与命名示例，按需创建；已有脚本或 CLI 可直接引用，不复制、不创建空壳。
 - 按实际需要配置 `state/` 和 `logs/`；运行数据和凭据保存在项目外或平台存储中。
 - 构建完成时返回实际文件树和复用/外部资源引用，标明与默认结构的差异。禁止仅返回计划树作为落地结果。
