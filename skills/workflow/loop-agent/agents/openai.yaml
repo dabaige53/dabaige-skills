@@ -1,0 +1,13 @@
+interface:
+  display_name: Loop Agent
+  short_description: 按需设计、构建、检查与诊断 AI 定时工作流，复用脚本并减少阻塞返工
+  default_prompt: 使用 $loop-agent 梳理我的自动化任务，按需完成工作流设计、脚本复用、环境验证和故障诊断。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: false
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas

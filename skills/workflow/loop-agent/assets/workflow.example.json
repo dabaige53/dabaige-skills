@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "id": "sample-review",
+  "goal": "离线示例：采集结构化样本，由 Agent 判断后验证结果结构",
+  "completion": [
+    "采集结果明确标记为演示数据，并包含本轮输入范围",
+    "结论引用输入证据；无新增输入时明确报告 no_data",
+    "结果结构校验通过，实际业务完成另由执行者核对"
+  ],
+  "trigger": {"kind": "manual", "schedule": null, "timezone": null},
+  "paths": {"project_root": ".", "logs": [], "state": null, "artifacts": null, "scripts": null},
+  "runtime": {
+    "scheduler": "未选择：复用目标项目已有执行器",
+    "execution_environment": "未验证：需要核对目标运行环境",
+    "required_commands": ["python3"],
+    "required_env": []
+  },
+  "limits": {"workflow_timeout_seconds": 300, "max_attempts": 2, "max_consecutive_failures": 3, "max_parallel": 1, "token_budget": 2000},
+  "controls": {
+    "timeout": "未验证：由目标执行器设置任务及步骤超时",
+    "retry": "未验证：只允许暂时性故障重试，最多两次尝试",
+    "overlap": "未验证：由目标调度器提供同工作流互斥",
+    "idempotency": "本示例只读并输出到 stdout；业务写入需重新设计",
+    "circuit_breaker": "未验证：连续三轮同因失败后退出并报告恢复条件"
+  },
+  "related_workflows": [],
+  "steps": [
+    {
+      "id": "collect", "title": "采集离线样本", "kind": "script", "needs": [],
+      "inputs": [], "outputs": ["stdout：JSON 对象，sample 为 true，records 为列表"],
+      "success_criteria": ["输出可解析为 JSON，明确 sample=true，不声称已接入真实数据"],
+      "timeout_seconds": 10, "max_attempts": 1, "side_effects": false,
+      "command": ["python3", "-c", "import json; print(json.dumps({'sample': True, 'records': []}))"]
+    },
+    {
+      "id": "analyze", "title": "依据样本给出结论", "kind": "ai", "needs": ["collect"],
+      "inputs": ["collect 的 JSON 输出，由执行器传入"],
+      "outputs": ["JSON 对象：status、findings、evidence"],
+      "success_criteria": ["空 records 对应 no_data；非空结论必须引用输入证据"],
+      "timeout_seconds": 90, "max_attempts": 1, "side_effects": false,
+      "prompt_file": "analysis-prompt.example.md", "agent": "按证据分析的 Agent 角色，实例待实际运行记录", "token_budget": 2000
+    },
+    {
+      "id": "verify", "title": "校验结论字段", "kind": "script", "needs": ["analyze"],
+      "inputs": ["analyze 的 JSON 输出，通过 stdin 传入"], "outputs": ["stdout：结构校验结果"],
+      "success_criteria": ["status 值合法，findings 与 evidence 均为列表；内容真实性仍需业务验收"],
+      "timeout_seconds": 10, "max_attempts": 1, "side_effects": false,
+      "command": ["python3", "-c", "import json,sys; x=json.load(sys.stdin); valid=isinstance(x,dict) and x.get('status') in ('ok','no_data','insufficient_evidence') and all(isinstance(x.get(k),list) for k in ('findings','evidence')); print(json.dumps({'schema_valid':valid})); sys.exit(0 if valid else 1)"]
+    }
+  ]
+}

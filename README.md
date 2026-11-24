@@ -11,7 +11,7 @@ git clone https://github.com/dabaige53/dabaige-skills.git
 ln -s "$PWD/dabaige-skills/skills/workflow/project-maintenance" ~/.claude/skills/project-maintenance
 ```
 
-## 自写 Skills（18）
+## 自写 Skills（19）
 
 | Skill | 说明 |
 | --- | --- |
@@ -29,6 +29,7 @@ ln -s "$PWD/dabaige-skills/skills/workflow/project-maintenance" ~/.claude/skills
 | [codex-thread-doctor](skills/workflow/codex-thread-doctor) | Audit and repair Codex task history and sidebar anomalies, individually or in … |
 | [linear-task-submission](skills/workflow/linear-task-submission) | Manage Linear issues and projects. |
 | [oasis-dita](skills/workflow/oasis-dita) | 按 OASIS DITA 风格回复或写入文档 |
+| [loop-agent](skills/workflow/loop-agent) | 设计、构建、验证和诊断 AI 定时与长任务。 |
 | [project-maintenance](skills/workflow/project-maintenance) | 盘点和整理项目目录与文档，明确文件职责、存放位置、维护方式与 Agent 阅读入口。 |
 | [skills-check](skills/workflow/skills-check) | 检查并清理 Skill 文件中的低价值内容与跨 Skill 依赖：没人要的证明、叠加否认、重复检查、空洞收尾、无条件告诫、重复规则，以及引用其他 Skill… |
 | [think-hard](skills/workflow/think-hard) | Use $think-hard for independent reasoning and alternative solutions. |
