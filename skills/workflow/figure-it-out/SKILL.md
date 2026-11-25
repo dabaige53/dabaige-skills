@@ -26,7 +26,7 @@ disable-model-invocation: true
 
 ## D. 随手记录决定
 
-每完成一项，在项目已有记录中追加改了什么、为何保留或撤回、证据在哪里。需要详细审查记录时，参照 [show-me-your-work](../../creative/show-me-your-work/SKILL.md)。
+每完成一项，在项目已有记录中追加改了什么、为何保留或撤回、证据在哪里。需要详细审查记录时，参照 [show-me-your-work](https://github.com/dabaige53/dabaige-skills/blob/24e5dd1ec9c1ba18005acc5970cbabbce616df09/skills/creative/show-me-your-work/SKILL.md)。
 
 ## E. 验收与交付
 
