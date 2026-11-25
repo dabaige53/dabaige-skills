@@ -1,0 +1,6 @@
+interface:
+  display_name: "reframe"
+  short_description: "查找准确术语和相邻领域的实例，用它们重写项目描述"
+  default_prompt: "使用 $reframe 帮我说清这个项目在解决什么问题。"
+policy:
+  allow_implicit_invocation: false

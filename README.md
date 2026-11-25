@@ -35,7 +35,7 @@ ln -s "$PWD/dabaige-skills/skills/workflow/project-maintenance" ~/.claude/skills
 | [think-hard](skills/workflow/think-hard) | Use $think-hard for independent reasoning and alternative solutions. |
 | [todoist-task-writing](skills/workflow/todoist-task-writing) | 规范 Todoist 个人待办及 AI 自动化异常的创建、更新、去重、简洁描述、复杂子任务、人工决策与回读。 |
 
-## 收录的第三方 Skills（57）
+## 收录的第三方 Skills（58）
 
 保留上游许可证，部分有本地修改，详见 [第三方声明](THIRD_PARTY_NOTICES.md)。
 
@@ -86,6 +86,7 @@ ln -s "$PWD/dabaige-skills/skills/workflow/project-maintenance" ~/.claude/skills
 | [ponytail](skills/workflow/ponytail) | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail/tree/main/skills/ponytail) | MIT |
 | [ponytail-audit](skills/workflow/ponytail-audit) | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail/tree/main/skills/ponytail-audit) | MIT |
 | [recall](skills/workflow/recall) | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/recall) | MIT |
+| [reframe](skills/workflow/reframe) | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/reframe) | MIT |
 | [setup-matt-pocock-skills](skills/workflow/setup-matt-pocock-skills) | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/setup-matt-pocock-skills) | MIT |
 | [sharpen](skills/workflow/sharpen) | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/sharpen) | MIT |
 | [skill-doctor](skills/workflow/skill-doctor) | [warpdotdev/common-skills](https://github.com/warpdotdev/common-skills/tree/main/.agents/skills/skill-doctor) | MIT |

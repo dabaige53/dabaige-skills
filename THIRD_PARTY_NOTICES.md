@@ -35,6 +35,7 @@
 | ponytail-audit | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail/tree/main/skills/ponytail-audit) | MIT | 仅附加 agents/openai.yaml |
 | pr | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/pr) | MIT | 仅附加 agents/openai.yaml |
 | recall | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/recall) | MIT | 已修改 |
+| reframe | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/reframe) | MIT | 仅附加 agents/openai.yaml |
 | research | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/research) | MIT | 调整 description |
 | retro | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/retro) | MIT | 仅附加 agents/openai.yaml |
 | setup-matt-pocock-skills | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/setup-matt-pocock-skills) | MIT | 已修改 |
