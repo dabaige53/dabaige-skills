@@ -1,4 +1,5 @@
 ---
+disable-model-invocation: true
 name: ponytail
 description: Simplify code when requested; prefer minimal solutions and existing tools.
 argument-hint: "[lite|full|ultra|off]"

@@ -1,4 +1,5 @@
 ---
+disable-model-invocation: true
 name: agent-reach
 description: >
   只读读取各平台内容：搜索、读帖、看评论、取字幕、查行情和职位。
@@ -25,7 +26,7 @@ metadata:
 - 自带工具不可用、结果缺了用户要的部分、或用户要的是渠道声明的站内动作时，再用 Reach。不确定有哪些动作和参数先跑 `agent-reach channels`。
 - 渠道已经加上（默认渠道或 `add` 过）时，搜索/阅读直接走该站工具；还没加的渠道，搜索/阅读先试免登录公开网页，结果里 `backend: public-web` 标明来源。`--backend public-web` 只查公开网页；`--backend <后端>` 指定站内工具。
 - 平台名或链接只用来认出来源，不自动触发安装或登录。
-- 摘要、页面壳、评论计数、字幕轨道列表不等于正文、评论或字幕本身，要分别说明。用户跳过登录时，已拿到的公开结果照样交付。
+- 只取得摘要、评论计数或字幕轨道列表时，按实际类型标注结果。
 
 ```bash
 agent-reach channels                      # 每个渠道的动作和参数
@@ -42,7 +43,7 @@ agent-reach read <链接>                   # 按链接自动选渠道
 |---|---|
 | `NEED_SETUP` | 缺依赖或密钥。按提示 `agent-reach add <渠道>`；要密钥时请用户本人提供，再 `agent-reach configure <key>` |
 | `NEED_LOGIN` | 保留已有结果，告诉用户需要登录；`agent-reach login <渠道>` 打开浏览器，由用户本人登录，你绝不代登、不要密码 |
-| `UPSTREAM_BROKEN` | 这个平台暂时有问题，`message` 是出错时的原话。用平台名告诉用户哪个平台暂时用不了、大概是什么原因，不说工具名；原话说明工具过时，才在用户同意后跑一次 `agent-reach update`；不循环重试 |
+| `UPSTREAM_BROKEN` | 根据 `message` 说明受影响的平台和原因。若提示工具过时，经用户同意后运行一次 `agent-reach update`。 |
 | `TIMEOUT` | 看失败阶段和渠道状态（`agent-reach doctor --text`）；不反复重试、不反复开窗 |
 | `RATE_LIMITED` | 平台限流，Reach 已暂停该渠道；按 `retry_after_seconds` 等，不换后端 |
 | `PLATFORM_BLOCKED` | 平台要求验证（验证码/风控）。停下，请用户在官方页面处理；不换账号、不换后端 |
@@ -50,7 +51,7 @@ agent-reach read <链接>                   # 按链接自动选渠道
 | `NOT_FOUND` | 内容不存在，核对链接或 ID |
 | `BAD_INPUT` | 参数不对，跑 `agent-reach channels` 看用法 |
 
-遇到 `PLATFORM_BLOCKED`、`RATE_LIMITED`、`NEED_LOGIN`、`BUSY` 就停止本次尝试，不换账号、后端或浏览器反复请求。网络失败或某台机器的失败不能说成"平台必须登录"。
+平台要求验证、限流、要求登录或浏览器忙时，停止本次请求，按表中条件恢复。
 
 ## 登录与专用浏览器
 
@@ -86,6 +87,7 @@ agent-reach read <链接>                   # 按链接自动选渠道
 | 升级 / 更新 | `agent-reach update` |
 | 卸载 | 先 `agent-reach uninstall --dry-run` 给用户看，确认后 `agent-reach uninstall` |
 | 让另一个 AI 也能用 | `agent-reach skill link <那个 AI 的 skill 目录>`；`agent-reach skill` 查看现在放在哪 |
+| 某个 AI 不要用户级的 skill（比如只按项目注册） | `agent-reach skill unlink <那个 AI 的 skill 目录>`；之后 setup 和 update 不再放回去 |
 
 故障排查、浏览器维护和卸载细节见 [维护说明](references/maintenance.md)：更新失败、浏览器起不来或要卸载时读它。
 
@@ -100,5 +102,5 @@ agent-reach read <链接>                   # 按链接自动选渠道
 ## 红线
 
 - 只读。发帖、评论、点赞、私信一律不做。
-- 不替用户登录，不索要或输出密码、Cookie 等凭据。
+- 登录凭据由用户在对应入口填写。禁止索取或输出密码、Cookie。
 - 普通查询不改依赖、不自动更新。

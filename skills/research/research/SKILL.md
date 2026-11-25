@@ -1,4 +1,5 @@
 ---
+disable-model-invocation: true
 name: research
 description: Research primary sources and save cited findings.
 ---

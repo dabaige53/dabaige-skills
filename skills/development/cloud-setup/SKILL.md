@@ -1,4 +1,5 @@
 ---
+disable-model-invocation: true
 name: cloud-setup
 description: 为新项目配置多端运行环境，迁移和优化旧项目的配置、入口与共享资源，明确各子项目必须本地运行或配置的内容。
 ---

@@ -32,7 +32,6 @@ Strict Task 与 General Task 的区别只在结构松紧：Strict 规定各部�
 | Subject Scheme | 组织级受控词表，限定 `@audience` 只能取哪些值；由信息架构师定义 |
 | DITAVAL | 发布时按受众 include 包含、exclude 排除、flag 标记 |
 
-受众只表示读者，不表示作者或执行者。“谁来执行”需另行记录。
 
 在本 Skill 中：项目 `AUDIENCE.md` 相当于 Subject Scheme 和受众定义；按读者裁剪回复相当于 DITAVAL 筛选。
 

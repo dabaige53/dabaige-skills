@@ -2,6 +2,8 @@
 
 `value-cleaner rule` removes rule text that changes no action: agent instructions such as `AGENTS.md` and `CLAUDE.md`, skill files, policies, and style guides. Scan signals are in brackets.
 
+Apply the [defensive-text removal rule](../SKILL.md#defensive-text-in-rules-and-docs) before judging the remaining candidates below.
+
 ## Decision rule
 
 A rule earns its place when it changes which action is taken under a stated condition and no other rule already sets that action.

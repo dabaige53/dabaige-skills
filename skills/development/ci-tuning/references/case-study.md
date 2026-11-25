@@ -35,7 +35,6 @@
 - `determine_changes` Job 按领域输出改动标记（`code`、`linter`、`formatter` 等），下游 Job 用 `if: needs.determine_changes.outputs.code == 'true' || github.ref == 'refs/heads/main'`：PR 按改动运行，main 始终全量。
 - 需要历史时不用 `fetch-depth: 0`，而是先浅克隆，再运行 `git fetch --no-tags --filter=blob:none --unshallow origin`，注释写明这样更快。
 - `Swatinem/rust-cache` 设 `save-if: ${{ github.ref == 'refs/heads/main' }}`：只在 main 写缓存，PR 读取。
-- `concurrency.group` 为 `${{ github.workflow }}-${{ github.ref_name }}-${{ github.event.pull_request.number || github.sha }}`，并开启 `cancel-in-progress`；main 上每个提交的 group 不同，不会互相取消。
 - 注意：ruff 部分 Job 使用 larger runner 和 Depot。这里只借用它的编排和缓存做法。
 
 ### vitejs/vite：`.github/workflows/ci.yml`

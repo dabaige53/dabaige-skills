@@ -1,4 +1,5 @@
 ---
+disable-model-invocation: true
 name: ui-skills-root
 description: Use before UI-related work to select the smallest useful UI Skills context through the ui-skills CLI.
 license: MIT

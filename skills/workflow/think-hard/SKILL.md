@@ -1,4 +1,5 @@
 ---
+disable-model-invocation: true
 name: think-hard
 description: Use $think-hard for independent reasoning and alternative solutions.
 ---

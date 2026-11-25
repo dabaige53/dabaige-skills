@@ -34,7 +34,6 @@ Add `## Agent 上下文` or `## 背景` only when extra execution context or sup
 Examples (adapt to the facts; do not copy invented results):
 
 - Progress comment: `测试环境已复现：重置密码后，登录服务还在读取旧缓存。需要检查缓存为什么没有失效。`
-- Completion comment: `缓存失效问题已修复。测试账号使用新密码可以登录，使用旧密码不能登录。[PR 链接]\n\n密码重置后需要立即清除登录缓存。以后修改密码流程时，也需要检查这一步。`
 - Agent reply to a request for status: `问题已定位到登录缓存，修复还没有验证。还需要用新旧密码各测试一次。`
 - Agent reply when extra execution context is needed: `还需要验证修复。\n\n## Agent 上下文\n\n使用测试账号重置密码，再分别用新密码和旧密码登录。\n\n## 背景\n\n重置密码后，登录服务仍读取旧缓存。`
 

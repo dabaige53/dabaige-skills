@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import ast
+import json
 import os
 import re
 import subprocess
@@ -24,9 +25,9 @@ SIGNALS = {
     "code": ["broad-except", "repeated-guard", "unreferenced", "test-only", "single-implementation", "commented-code"],
     "test": ["no-assertion", "weak-assertion", "mock-only", "duplicate-body", "large-parametrize", "skipped",
              "sleep", "unused-fixture", "unreferenced-fixture", "large-snapshot", "orphan-snapshot"],
-    "rule": ["duplicate", "denial", "vague-caution", "every-output", "exception-chain", "closing-summary",
+    "rule": ["duplicate", "denial", "defensive-text", "vague-caution", "every-output", "exception-chain", "closing-summary",
              "broken-link", "missing-path"],
-    "docs": ["duplicate", "denial", "closing-summary", "stale-status", "todo", "broken-link", "missing-path"],
+    "docs": ["duplicate", "denial", "defensive-text", "closing-summary", "stale-status", "todo", "broken-link", "missing-path"],
 }
 
 MAX_BYTES = 1_000_000
@@ -647,6 +648,9 @@ DENIAL = re.compile(
     r"|\bnot\s+(?:a|an)\s+substitute\b"
     r"|\bno\s+guarantee\b|\bfor\s+reference\s+only\b|\bnot\s+necessarily\b)"
     r"|不能证明|无法证明|不足以证明|不能说明|不代表|不等于|不意味着|不构成|不保证|无法保证|不能保证|仅供参考|不能替代|不声称|并非")
+DEFENSIVE_TEXT = re.compile("|".join(
+    json.loads((Path(__file__).resolve().parent.parent / "references" / "defensive-text.json").read_text(
+        encoding="utf-8")).values()))
 VAGUE = re.compile(
     r"(?i:\b(?:be\s+careful|make\s+sure|pay\s+(?:close\s+)?attention|keep\s+in\s+mind|always\s+remember|be\s+mindful"
     r"|use\s+(?:good\s+|your\s+)?judge?ment|exercise\s+caution|with\s+care|as\s+(?:appropriate|needed|necessary)"
@@ -833,6 +837,12 @@ def scan_text(paths, root, rep, names=frozenset()):
         text = read(path)
         if text is None:
             continue
+        if "defensive-text" in rep.only:
+            for number, line in enumerate(text.splitlines(), 1):
+                if DEFENSIVE_TEXT.search(line):
+                    rep.add("defensive-text", path, number, line)
+            if rep.only == {"defensive-text"}:
+                continue
         section = []
         for kind, start, segments in md_units(text) + [("heading", 0, [])]:
             for number, segment in segments:

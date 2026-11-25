@@ -1,4 +1,5 @@
 ---
+disable-model-invocation: true
 name: decompose-ui
 description: 将网页、网站、可视化和图表需求拆成抽象、可复用的组件。用于实现前拆解或用户要求“先拆解”；先理解项目与需求，提出初步组件及拆解方向供用户确认，再输出完整组件清单、用途与联动。
 ---

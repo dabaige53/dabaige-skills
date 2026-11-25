@@ -2,7 +2,6 @@
 
 ## 官方工具与连接
 
-复用已连接的官方本地 MCP；工具不可用时先核对桌面应用设置、插件和本机私有 MCP 配置，不用 CLI 保险库命令假装管理 Environment。按本机当前设置启用 Labs 的 MCP Server 和 Developer 的 MCP 集成；企业账号可能需管理员启用。保留用户全局 CLI 的选择，不为本流程自动新增全局 MCP。
 
 本机 macOS 程序路径可用 `/Applications/1Password.app/Contents/MacOS/1password-mcp`；其他系统发现实际可用路径。核对官方工具 schema，参数通常为 `accountId`、`environmentId`、`mountPath`，不根据旧文档推断返回字段。
 

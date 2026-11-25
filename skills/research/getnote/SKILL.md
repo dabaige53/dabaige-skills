@@ -1,12 +1,11 @@
 ---
 name: getnote
 description: 管理得到笔记。
-disable-model-invocation: false
+disable-model-invocation: true
 ---
 
 # GetNote MCP
 
-调用当前会话已连接的“得到笔记”远程 MCP。不要调用本机 CLI，不要读取、显示或传递 API Key。
 
 ## 处理规则
 
@@ -16,7 +15,6 @@ disable-model-invocation: false
 - 删除笔记、移除标签、移出知识库或创建公开分享链接前，展示精确对象并取得明确确认。说明分享链接可被持有链接者访问。
 - 创建、更新、添加标签、加入知识库和订阅直播前，简要说明目标与影响。
 - 如实报告工具错误和 `request_id`；不得把已发送请求写成已完成。
-- 链接或图片笔记返回 `task_id` 时，使用 `get_note_task_progress` 每 10–30 秒查询状态。运行时间较长时简要报告进度；本轮无法继续等待时，保留 `task_id` 并标为待完成。超时或空响应不代表失败。只有确认任务失败且未创建目标笔记后，才按原参数重试一次；无法确认时先查状态，避免重复创建。
 
 ## MCP 工具映射
 

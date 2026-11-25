@@ -1,4 +1,5 @@
 ---
+disable-model-invocation: true
 name: pr
 description: "Use when writing a PR body."
 metadata:

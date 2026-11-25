@@ -1,7 +1,7 @@
 ---
 name: why
 description: "Investigate design rationale and historical decisions using code history, reviews, issues and relevant available sources. Separate documented reasons, inferences and evidence gaps."
-disable-model-invocation: false
+disable-model-invocation: true
 ---
 
 # Why
@@ -25,6 +25,8 @@ If the target is vague ("why do we do it this way?" with no clear referent), mak
 ## Step 2. Establish the Code Anchor
 
 Before searching evidence sources, build the seed context inline: file paths and line ranges, key symbols (functions, classes, constants), the last few commits touching the target, PR numbers from merge commits (pattern `(#1234)` in the subject line), and any linked ticket IDs. Run `git blame -L <start>,<end> <file>` for last-touch commits, `git log --follow -p -- <file>` for full history with patches through renames, `git log --oneline -20 -- <file>` for recent commits with PR numbers visible, and `git log -1 --format=%B <commit>` to extract PR numbers. When GitHub access is available, read the PR body and discussion for substantive commits using the existing connector or installed CLI; for example, `gh pr view <number> --json title,body,author,createdAt,mergedAt,labels,closingIssuesReferences,comments,reviews`. Report inaccessible records instead of assuming they contain no rationale. Use this anchor in each source investigation and synthesis.
+
+Start with the commit and PR that introduced the behavior, then read the discussions for later changes that affected it. When the authors' records answer the question, cite them and finish here. Distinguish their stated reasons from your inferences. Use the broader investigation below for missing evidence, conflicting accounts, or an explicit historical audit.
 
 ## Step 3. Investigate relevant evidence sources
 

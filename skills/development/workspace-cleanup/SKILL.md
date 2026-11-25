@@ -1,4 +1,5 @@
 ---
+disable-model-invocation: true
 name: workspace-cleanup
 description: 清理项目缓存、临时文件、旧构建与运行结果、过期日志和备份、废弃工作目录及多端重复副本，回收空间。用于开发或运行后的目录清理。
 ---

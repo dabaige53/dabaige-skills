@@ -1,4 +1,5 @@
 ---
+disable-model-invocation: true
 name: ci-tuning
 description: 基于项目现有 GitHub Actions CI 做工程化提速：建立 CI.md 与统一 CI Hook，重组 Lint、Typecheck、Test、Build 任务，编排并发、Matrix、分片与关键路径，加速缓存、Checkout、依赖安装、环境和 Lint，并用运行数据验证覆盖与耗时。通过 `$ci-tuning init|organize|parallel|accelerate|validate` 调用；只用 GitHub 标准免费 Runner，不削弱质量门禁。
 argument-hint: "<init|organize|parallel|accelerate|validate> [范围]"
@@ -6,7 +7,6 @@ argument-hint: "<init|organize|parallel|accelerate|validate> [范围]"
 
 # CI Tuning
 
-目标：在检查质量不变的前提下，缩短 PR 从推送到拿到全部检查结果的时间。以项目现有 CI 为起点，重新分组、编排和加速；不重写测试，不换付费 CI 服务。
 
 ## 命令
 
@@ -46,7 +46,6 @@ argument-hint: "<init|organize|parallel|accelerate|validate> [范围]"
 6. **测试只改编排。** 可以调整分组、分片、并发度和运行配置；不修改、合并或删除测试用例。需要改测试基础设施的项（如关闭隔离、补状态清理），先给出证据并征得用户同意。
 7. **替换工具先证明等价。** 替换 Lint、Formatter、Typechecker 或构建工具前，按对应 reference 对比规则和输出。新工具未覆盖的部分保留原工具，或把取舍交给用户决定。
 8. **不默认安装本地 Git Hook。** CI Hook 指项目统一的检查入口；pre-push 等本地 Hook 只在用户明确要求时安装。
-9. **缓存要有边界。** 只缓存依赖、工具链和可重建的构建缓存，key 绑定 lockfile 与版本；不缓存整个工作区，不缓存凭据。
 10. **保护现有改动与仓库设置。** 检查工作区，只改本模块范围内的文件。必需检查名称、ruleset 等仓库设置的变更，给出具体操作，由用户执行或确认。推送分支、创建 PR、触发或重跑 workflow 前先征得同意。
 11. **以实际运行为准。** 每组改动后运行 `compare.py coverage`（有 actionlint 时一并运行），再用真实运行验证。不能只凭 YAML 看起来合理就宣布完成。
 

@@ -2,6 +2,8 @@
 
 `value-cleaner docs` removes documentation that does not help a reader act: READMEs, guides, plans, reports, and reader-facing comments. Scan signals are in brackets.
 
+Apply the [defensive-text removal rule](../SKILL.md#defensive-text-in-rules-and-docs) before judging the remaining candidates below.
+
 ## Decision rule
 
 A document earns its place when a reader can act with it faster or more safely than from code, configuration, CI, or another document.
