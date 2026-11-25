@@ -19,6 +19,7 @@
 | engram-memory | [Gentleman-Programming/engram](https://github.com/Gentleman-Programming/engram/tree/main/plugin/codex/skills/memory) | MIT | 仅附加 agents/openai.yaml |
 | find-docs | [upstash/context7](https://github.com/upstash/context7/tree/master/skills/find-docs) | MIT | 仅附加 agents/openai.yaml |
 | frontend-slides | [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides/tree/main/plugins/frontend-slides/skills/frontend-slides) | MIT | 仅附加 agents/openai.yaml |
+| figure-it-out | [backnotprop/pstack](https://github.com/backnotprop/pstack/tree/main/skills/figure-it-out) | MIT | 已修改 |
 | grill-me | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me) | MIT | 仅附加 agents/openai.yaml |
 | grill-with-docs | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/grill-with-docs) | MIT | 仅附加 agents/openai.yaml |
 | grilling | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/grilling) | MIT | 仅附加 agents/openai.yaml |
