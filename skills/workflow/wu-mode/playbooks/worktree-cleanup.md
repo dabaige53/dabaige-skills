@@ -1,6 +1,6 @@
 ### Worktree cleanup
 
-本流程只细化 [workspace-cleanup](../../../development/workspace-cleanup/SKILL.md) 对 worktree 的判断。
+本流程只细化 `$workspace-cleanup` 对 worktree 的判断。
 
 1. 从 Git 的 worktree 记录列出真实路径、分支和大小；不能靠目录名或最后修改时间判定废弃。
 2. 分别检查合并去向、未提交和未跟踪内容、仍在使用的会话或进程、是否有只在这一端存在的产物。任一不明就保留。
