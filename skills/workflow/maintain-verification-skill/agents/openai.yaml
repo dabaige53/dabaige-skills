@@ -1,0 +1,5 @@
+interface:
+  display_name: "maintain-verification-skill"
+  short_description: "维护项目验证技能并核对实际功能入口"
+policy:
+  allow_implicit_invocation: false

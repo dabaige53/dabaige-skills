@@ -36,7 +36,7 @@ ln -s "$PWD/dabaige-skills/skills/workflow/project-maintenance" ~/.claude/skills
 | [think-hard](skills/workflow/think-hard) | Use $think-hard for independent reasoning and alternative solutions. |
 | [todoist-task-writing](skills/workflow/todoist-task-writing) | 规范 Todoist 个人待办及 AI 自动化异常的创建、更新、去重、简洁描述、复杂子任务、人工决策与回读。 |
 
-## 收录的第三方 Skills（60）
+## 收录的第三方 Skills（62）
 
 保留上游许可证，部分有本地修改，详见 [第三方声明](THIRD_PARTY_NOTICES.md)。
 
@@ -79,12 +79,14 @@ ln -s "$PWD/dabaige-skills/skills/workflow/project-maintenance" ~/.claude/skills
 | [typesafe-ai](skills/tools/typesafe-ai) | [typesafe-ai/skills](https://github.com/typesafe-ai/skills) | MIT |
 | [automate-me](skills/workflow/automate-me) | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/automate-me) | MIT |
 | [bro](skills/workflow/bro) | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/bro) | MIT |
+| [create-verification-skill](skills/workflow/create-verification-skill) | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/create-verification-skill) | MIT |
 | [figure-it-out](skills/workflow/figure-it-out) | [backnotprop/pstack](https://github.com/backnotprop/pstack/tree/main/skills/figure-it-out) | MIT |
 | [grill-me](skills/workflow/grill-me) | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me) | MIT |
 | [grill-with-docs](skills/workflow/grill-with-docs) | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/grill-with-docs) | MIT |
 | [grilling](skills/workflow/grilling) | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/grilling) | MIT |
 | [handoff](skills/workflow/handoff) | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/handoff) | MIT |
 | [in-your-own-words](skills/workflow/in-your-own-words) | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/in-your-own-words) | MIT |
+| [maintain-verification-skill](skills/workflow/maintain-verification-skill) | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/maintain-verification-skill) | MIT |
 | [ponytail](skills/workflow/ponytail) | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail/tree/main/skills/ponytail) | MIT |
 | [ponytail-audit](skills/workflow/ponytail-audit) | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail/tree/main/skills/ponytail-audit) | MIT |
 | [recall](skills/workflow/recall) | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/recall) | MIT |

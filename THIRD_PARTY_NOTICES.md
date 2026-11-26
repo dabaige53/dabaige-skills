@@ -11,6 +11,7 @@
 | benchmark-checklist | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/benchmark-checklist) | MIT | 已修改 |
 | blast-radius | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/blast-radius) | MIT | 已修改 |
 | bro | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/bro) | MIT | 仅附加 agents/openai.yaml |
+| create-verification-skill | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/create-verification-skill) | MIT | 已修改 |
 | cli-creator | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/cli-creator) | Apache-2.0 | 仅附加 agents/openai.yaml |
 | correct | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/correct) | MIT | 仅附加 agents/openai.yaml |
 | diagnosing-bugs | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/diagnosing-bugs) | MIT | 仅附加 agents/openai.yaml |
@@ -29,6 +30,7 @@
 | i-have-adhd | [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd/tree/main/skills/i-have-adhd) | MIT | 仅附加 agents/openai.yaml |
 | impeccable | [pbakaus/impeccable](https://github.com/pbakaus/impeccable/tree/main/.agents/skills/impeccable) | Apache-2.0 | 仅附加 agents/openai.yaml |
 | in-your-own-words | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/in-your-own-words) | MIT | 仅附加 agents/openai.yaml |
+| maintain-verification-skill | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/maintain-verification-skill) | MIT | 已修改 |
 | interface-bts | [nomanjack/interface-bts](https://github.com/nomanjack/interface-bts) | MIT | 仅附加 agents/openai.yaml |
 | kami | [tw93/Kami](https://github.com/tw93/Kami/tree/main/plugins/kami/skills/kami) | MIT | 仅附加 agents/openai.yaml |
 | no-comments | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/no-comments) | MIT | 已修改 |
