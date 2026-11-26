@@ -11,7 +11,7 @@ git clone https://github.com/dabaige53/dabaige-skills.git
 ln -s "$PWD/dabaige-skills/skills/workflow/project-maintenance" ~/.claude/skills/project-maintenance
 ```
 
-## 自写 Skills（19）
+## 自写及获授权的 Skills（20）
 
 | Skill | 说明 |
 | --- | --- |
@@ -22,6 +22,7 @@ ln -s "$PWD/dabaige-skills/skills/workflow/project-maintenance" ~/.claude/skills
 | [cloud-setup](skills/development/cloud-setup) | 为新项目配置多端运行环境，迁移和优化旧项目的配置、入口与共享资源，明确各子项目必须本地运行或配置的内容。 |
 | [design-sync](skills/development/design-sync) | 在界面或交互改动后同步受影响的实现、设计画板、示例与手册；用户要求核对设计与实现一致性、同步设计资料或补齐设计交付时使用。 |
 | [fixit](skills/development/fixit) | 排查系统、开发环境和工具配置故障，结合本机证据、Search、GitHub Issues 与 Context7 查找相似问题，核实原因并验证修复。 |
+| [git-ops](skills/development/git-ops) | 整理分支、按指定范围提交、同步远端。 |
 | [value-cleaner](skills/development/value-cleaner) | Use when users want to remove low-value logic, redundant checks, filler, or me… |
 | [workspace-cleanup](skills/development/workspace-cleanup) | 清理项目缓存、临时文件、旧构建与运行结果、过期日志和备份、废弃工作目录及多端重复副本，回收空间。 |
 | [getnote](skills/research/getnote) | 管理得到笔记。 |
@@ -35,7 +36,7 @@ ln -s "$PWD/dabaige-skills/skills/workflow/project-maintenance" ~/.claude/skills
 | [think-hard](skills/workflow/think-hard) | Use $think-hard for independent reasoning and alternative solutions. |
 | [todoist-task-writing](skills/workflow/todoist-task-writing) | 规范 Todoist 个人待办及 AI 自动化异常的创建、更新、去重、简洁描述、复杂子任务、人工决策与回读。 |
 
-## 收录的第三方 Skills（59）
+## 收录的第三方 Skills（60）
 
 保留上游许可证，部分有本地修改，详见 [第三方声明](THIRD_PARTY_NOTICES.md)。
 
@@ -99,6 +100,7 @@ ln -s "$PWD/dabaige-skills/skills/workflow/project-maintenance" ~/.claude/skills
 | [wait-what](skills/workflow/wait-what) | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/wait-what) | MIT |
 | [wizard](skills/workflow/wizard) | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/wizard) | MIT |
 | [writing-for-agents](skills/workflow/writing-for-agents) | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/writing-for-agents) | MIT |
+| [statechart](skills/workflow/statechart) | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/statechart) | MIT |
 | [wu-mode](skills/workflow/wu-mode) | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/poteto-mode) | MIT |
 
 ## 许可证

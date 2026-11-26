@@ -62,6 +62,7 @@
 | writing-for-agents | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/writing-for-agents) | MIT | 仅附加 agents/openai.yaml |
 | writing-fragments | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/in-progress/writing-fragments) | MIT | 仅附加 agents/openai.yaml |
 | writing-shape | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/in-progress/writing-shape) | MIT | 仅附加 agents/openai.yaml |
+| statechart | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/statechart) | MIT | 已修改 |
 | wu-mode | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/poteto-mode) | MIT | 已修改 |
 
 `skills/workflow/oasis-dita/references/oasis-dita/` 摘录自 OASIS DITA 1.3 规范，版权归 OASIS Open 所有，文件内保留原版权声明。

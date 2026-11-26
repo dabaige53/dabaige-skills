@@ -15,6 +15,7 @@ disable-model-invocation: true
 - 报性能数字 → 说明基线、负载、波动和实际完成的工作量。长任务 → 将影响下一步的决定记入项目已有记录。查 PR → 按[跟进 PR](playbooks/babysit.md)区分一次查询和持续跟进。
 - 存在两种会导致不同交付的理解 → 用 `$in-your-own-words` 复述用户的目标，指出两种理解会怎样改变结果。用户要推敲任务要求 → `$sharpen`；要深入讨论取舍 → `$grilling`。
 - 用户想知道“我在做的东西，专业上怎么说”时，用 `$reframe` 从项目材料和用户原话中找出对应术语，借鉴相邻领域的用法，重写用户的描述。
+- 用户要求写架构决策记录（ADR）时，用 `$domain-modeling`。主动建议写 ADR 须同时满足三个条件：决定难以撤回、仅看代码难以理解原因、选方案时做过实际取舍。
 - 接续已有工作 → 先找上次停在哪里。跨本机、Mac mini、云端时，以项目共用的任务记录、数据和产物为准。区分“本机已改”“已推送”“目标端已生效”。
 - 发现改动可能影响其他使用方 → 用 `$blast-radius` 查关键依赖。用户要清理内容 → `$value-cleaner`；明确清注释 → `$no-comments`。
 - 写技术文档 → `$technical-writing`；写 PR 正文 → `$pr`；写给 Agent 的规则 → `$writing-for-agents`。用 `$unslop` 删掉不影响理解的套话。
@@ -47,6 +48,7 @@ disable-model-invocation: true
 | 观察正在运行的程序；或分析已有采样 | [运行时调查](playbooks/runtime-forensics.md) / [采样分析](playbooks/trace-forensics.md) |
 | 判断 UI 迁移是否保持视觉一致 | [视觉对照](playbooks/visual-parity.md) |
 | 用同一任务比较多个方案的产出 | [盲评](playbooks/eval.md) |
+| 盘点流程有哪些状态、什么条件允许切换，或找出违反规则的最短路径 | `$statechart` |
 | 编写或修改普通 Skill | [编写 Skill](playbooks/authoring-a-skill.md) |
 | 准备 PR；或查看已有 PR 的状态 | [准备 PR](playbooks/opening-a-pr.md) / [跟进 PR](playbooks/babysit.md) |
 | 用户要求整理 Git 分支、提交改动或同步远端 | `$git-ops`，按用户指定的操作执行 |
