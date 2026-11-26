@@ -32,7 +32,6 @@
 | in-your-own-words | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/in-your-own-words) | MIT | 仅附加 agents/openai.yaml |
 | maintain-verification-skill | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/maintain-verification-skill) | MIT | 已修改 |
 | interface-bts | [nomanjack/interface-bts](https://github.com/nomanjack/interface-bts) | MIT | 仅附加 agents/openai.yaml |
-| kami | [tw93/Kami](https://github.com/tw93/Kami/tree/main/plugins/kami/skills/kami) | MIT | 仅附加 agents/openai.yaml |
 | no-comments | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/no-comments) | MIT | 已修改 |
 | ponytail | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail/tree/main/skills/ponytail) | MIT | 调整 description |
 | ponytail-audit | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail/tree/main/skills/ponytail-audit) | MIT | 仅附加 agents/openai.yaml |

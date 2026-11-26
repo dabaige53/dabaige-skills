@@ -36,7 +36,7 @@ ln -s "$PWD/dabaige-skills/skills/workflow/project-maintenance" ~/.claude/skills
 | [think-hard](skills/workflow/think-hard) | Use $think-hard for independent reasoning and alternative solutions. |
 | [todoist-task-writing](skills/workflow/todoist-task-writing) | 规范 Todoist 个人待办及 AI 自动化异常的创建、更新、去重、简洁描述、复杂子任务、人工决策与回读。 |
 
-## 收录的第三方 Skills（62）
+## 收录的第三方 Skills（61）
 
 保留上游许可证，部分有本地修改，详见 [第三方声明](THIRD_PARTY_NOTICES.md)。
 
@@ -46,7 +46,6 @@ ln -s "$PWD/dabaige-skills/skills/workflow/project-maintenance" ~/.claude/skills
 | [frontend-slides](skills/creative/frontend-slides) | [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides/tree/main/plugins/frontend-slides/skills/frontend-slides) | MIT |
 | [impeccable](skills/creative/impeccable) | [pbakaus/impeccable](https://github.com/pbakaus/impeccable/tree/main/.agents/skills/impeccable) | Apache-2.0 |
 | [interface-bts](skills/creative/interface-bts) | [nomanjack/interface-bts](https://github.com/nomanjack/interface-bts) | MIT |
-| [kami](skills/creative/kami) | [tw93/Kami](https://github.com/tw93/Kami/tree/main/plugins/kami/skills/kami) | MIT |
 | [shadcn](skills/creative/shadcn) | [shadcn-ui/ui](https://github.com/shadcn-ui/ui/tree/main/skills/shadcn) | MIT |
 | [show-me](skills/creative/show-me) | [humanlayer/skills](https://github.com/humanlayer/skills/tree/main/plugins/show-me/skills/show-me) | MIT |
 | [show-me-your-work](skills/creative/show-me-your-work) | [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/show-me-your-work) | MIT |
